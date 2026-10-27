@@ -8,11 +8,6 @@ export default function Dictionary() {
   let [results, setResults] = useState(null);
 
   function handleResponse(response) {
-    // console.log(response.data);
-    // console.log(response.data.meanings[0]);
-    // console.log(response.data.meanings[0].definition);
-    // console.log(response.data.phonetic);
-    // console.log(response.data.word);
     setResults(response.data);
   }
 
@@ -30,7 +25,12 @@ export default function Dictionary() {
     <div className="Dictionary">
       <h1>Dictionary</h1>
       <form onSubmit={search}>
-        <input type="search" onChange={handleSubmitChange} />
+        <input
+          type="search"
+          onChange={handleSubmitChange}
+          placeholder="e.g: sunset, fashion, book"
+          className="search"
+        />
       </form>
       <Results results={results} />
     </div>

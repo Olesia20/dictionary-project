@@ -1,12 +1,20 @@
-import Reeact from "react";
+import React from "react";
+import Example from "./Example";
+import Synonyms from "./Synonyms";
+
+
 export default function Meaning(props) {
   return (
     <div>
-      {" "}
-          <h3>
-              <em>{props.meaning.partOfSpeech}</em></h3>
-      <p>Definition: {props.meaning.definition}</p>
-      <p>Example: {props.meaning.example}</p>
+      <h3>
+        <em>{props.meaning.partOfSpeech}</em>
+      </h3>
+      <h6>
+        Definition: {props.meaning.definition}
+        <br />
+        <Example example={props.meaning.example} />
+        <Synonyms />
+      </h6>
     </div>
   );
 }
