@@ -9,7 +9,7 @@ export default function Photos(props) {
             console.log(photo);
             return (
               <div className="col-4" key={index}>
-                <img src={photo.urls.thumb} className="img-fluid" />
+                <img src={photo.urls.thumb} className="img-fluid" alt="" />
               </div>
             );
           })}
