@@ -1,21 +1,83 @@
-.Dictionary {
+.Submit {
   padding: 30px;
   margin: 30px 0;
   text-align: center;
-  background-color: rgb(234, 241, 218);
-  border-radius: 20px;
+  background-color: rgb(250, 250, 249);
+  border-radius: 8px;
   box-shadow:
     inset 5px 5px 10px #c5c5c5,
     inset -5px -5px 10px #ffff;
+}
+.Dictionary h1 {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 .Results {
   margin: 30px 0;
 }
-.search{
-  border-radius: 10px;
+.Results hr {
+  width: 90%;
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid black;
+}
+.Results h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.Results span {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+.text-capitalize {
+  margin-left: 25px;
+}
+.search {
+  border-radius: 8px;
   border: none;
   box-shadow:
     inset 5px 5px 10px #c5c5c5,
     inset -5px -5px 10px #ffff;
-    padding: 10px 100px;
+  padding: 10px 130px;
+}
+.container-1 {
+  box-shadow: 15px 30px 30px rgba(75, 70, 70, 0.591);
+  border-radius: 8px;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: rgb(250, 250, 249);
+}
+.container-2 {
+  font-family: "Cormorant Garamond", serif;
+  font-style: normal;
+  border-radius: 8px;
+  border:
+    0.5px solid,
+    black;
+}
+strong {
+  font-size: 20px;
+}
+
+.Meaning {
+  font-size: 30px;
+  margin-left: 20px;
+}
+.Photos {
+  margin-bottom: 50px;
+  padding: 20px;
+  background-color: rgb(250, 250, 249);
+  box-shadow: 15px 30px 30px rgba(75, 70, 70, 0.591);
+  border-radius: 8px;
+}
+.Photo {
+  margin: 5px;
+  border-radius: 5px;
 }

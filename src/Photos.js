@@ -1,17 +1,24 @@
 import React from "react";
 export default function Photos(props) {
-  console.log(props.photos);
   if (props.photos) {
+    console.log(props.photos);
     return (
-      <div className="Photos">
+      <div className="Photo">
         <div className="row">
           {props.photos.map(function (photo, index) {
-            console.log(photo);
-            return (
-              <div className="col-4" key={index}>
-                <img src={photo.urls.thumb} className="img-fluid" alt="" />
-              </div>
-            );
+            if (index < 9) {
+              return (
+                <div className="col-4" key={index}>
+                  <img
+                    src={photo.urls.small}
+                    className="img-fluid Photo"
+                    alt=""
+                  />
+                </div>
+              );
+            } else {
+              return null;
+            }
           })}
         </div>
       </div>

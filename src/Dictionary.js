@@ -45,17 +45,25 @@ export default function Dictionary() {
   if (loaded) {
     return (
       <div className="Dictionary">
-        <h1>Dictionary</h1>
-        <form onSubmit={handleSubmiit}>
-          <input
-            type="search"
-            onChange={handleSubmitChange}
-            placeholder="e.g: sunset, fashion, book"
-            className="search"
-          />
-        </form>
-        <Results results={results} />
-        <Photos photos={photos} />
+        <div className="Submit">
+          <h1>Dictionary</h1>
+          <form onSubmit={handleSubmiit}>
+            <input
+              type="search"
+              onChange={handleSubmitChange}
+              placeholder="e.g: sunset, fashion, book"
+              className="search"
+            />
+          </form>
+        </div>
+        <div className="container-1">
+          <div className="container-2">
+            <Results results={results} />{" "}
+          </div>
+        </div>
+        <div className="Photos">
+          <Photos photos={photos} />
+        </div>
       </div>
     );
   } else {
