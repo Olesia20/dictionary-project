@@ -81,3 +81,8 @@ strong {
   margin: 5px;
   border-radius: 5px;
 }
+@media (max-width 900px) {
+  .search {
+    padding: 10px 90px;
+  }
+}
